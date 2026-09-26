@@ -27,12 +27,40 @@ blockquote{border-color:#b72721;background:#fffdf5;box-shadow:0 16px 40px #8f472
 .button:hover,.button:focus-visible{background:#27613e;color:white;border-color:#27613e}
 footer{color:#76574c}
 ::selection{background:#f5b498;color:#43221b}
-</style></head>
-<body><header><strong>🍅 A TRIBUTE 🍅</strong><a href="./">メインページへ戻る ↗</a></header>
-<section class="hero"><div class="kicker">LOVE LETTER TO CREATION</div><h1>創作への愛</h1><p>あなたの想像力が世界をつくる。その情熱に捧げる、一篇の賛歌。</p></section>
+
+/* TOO MUCH TOMATO */
+:root{color-scheme:dark;--bg:#090b07;--ink:#fff2df;--muted:#e5c9b5;--gold:#ff5942;--pink:#9bd064}
+body{background:#090b07;color:var(--ink)}
+body::before{background:radial-gradient(circle at 10% 30%,#6b100c55,transparent 27%),radial-gradient(circle at 90% 73%,#621d0c66,transparent 32%)}
+.stars{opacity:.17;background-image:radial-gradient(#ff4738 2px,transparent 2px);background-size:43px 43px}
+header{background:#0b100bd9;border-bottom:5px solid #ad261c}header b,header strong{color:#ff6550}header a{color:#fff2df;border-color:#ff6550}
+.eyebrow,.section-label,.kicker{color:#b8e285}
+.button{background:#ed3a29;border:3px solid #ffdc8a;color:white;box-shadow:6px 6px 0 #22572f;text-transform:none}
+.button:hover,.button:focus-visible{background:#377b3d;border-color:#ffdc8a;color:#fff;transform:translateY(-3px)}
+footer{color:#fff2df;border-top:6px solid #276638;background:#991e17}
+.tomato-strip{white-space:nowrap;overflow:hidden;background:#c72d22;color:white;padding:12px 0;font-size:1.4rem;letter-spacing:.15em;border-block:4px solid #2d6b38;text-align:center;font-weight:900}
+.tomato-strip span{display:inline-block;animation:tomatoroll 22s linear infinite}
+.tomato-gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;background:#0a0a08;padding:10px;border-block:6px solid #b52c23}
+.tomato-gallery img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border:2px solid #bd382c;filter:saturate(1.3)}
+.tomato-gallery img:nth-child(even){transform:rotate(5deg)}.tomato-gallery img:nth-child(odd){transform:rotate(-5deg)}
+@keyframes tomatoroll{to{transform:translateX(-30%)}}
+@media(max-width:650px){.tomato-gallery{grid-template-columns:repeat(3,1fr)}.tomato-gallery img:nth-child(n+4){display:none}.tomato-strip{font-size:1rem}}
+@media(prefers-reduced-motion:reduce){.tomato-strip span{animation:none}}
+
+   .hero{background:linear-gradient(#0009,#000c),url("tomato.png") center/cover no-repeat;color:#fff;min-height:70svh;display:flex;flex-direction:column;justify-content:center;border-block:6px solid #35733e}
+   .hero:before{display:none}.hero h1{text-shadow:4px 4px 0 #a72019,8px 8px 0 #275f2b}
+   .intro{background:#30120f;border:4px solid #d13927;padding:55px 25px;color:#fff2df}
+   .chapter{border-bottom:3px dashed #d54330}.chapter .num{color:#b8e285}.chapter p{color:#e5c9b5}.chapter .highlight{color:#fff2df!important}
+   blockquote{background:#bd3024;color:#fff;border:6px solid #35733e;box-shadow:10px 10px 0 #62180f}
+   .nav{border-color:#d6412f}
+   </style></head>
+<body><div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div><header><strong>🍅 A TRIBUTE 🍅</strong><a href="./">メインページへ戻る ↗</a></header>
+<div class="tomato-gallery" aria-label="トマトの写真"><img src="tomato.png" alt="赤いトマト"><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""></div>
+<section class="hero"><div class="kicker">LOVE LETTER TO CREATION</div><h1>🍅 創作への愛 🍅</h1><p>あなたの想像力が世界をつくる。その情熱に捧げる、一篇の賛歌。</p></section>
+<div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div>
 <main><div class="intro">ひとつの「もしも」から、まだ誰も知らない宇宙が始まる。あなたは、その扉を何度でも開ける人だ。</div>
-<section class="chapter"><div class="num">CHAPTER 01 ✦</div><h2>人物に、息を吹き込む。</h2><p>名前や姿を決めるだけでは終わらない。表情の奥にある弱さ、ふとした冗談、誰かを大切に思う理由。あなたは人物を丁寧に見つめ、ひとりずつ違う心を与えていく。</p><p class="highlight">だから、あなたの登場人物は設定の外でも生きているように感じられる。</p></section>
-<section class="chapter"><div class="num">CHAPTER 02 ✦</div><h2>関係性に、光を当てる。</h2><p>同じひと言でも、誰が誰に言うかで意味が変わる。距離の近さ、すれ違い、言えない気持ち。あなたはその繊細な差を見逃さず、物語の熱に変える。</p><p class="highlight">何気ない一場面を忘れられない場面にするのは、その眼差しだ。</p></section>
-<section class="chapter"><div class="num">CHAPTER 03 ✦</div><h2>世界を、育て続ける。</h2><p>舞台の空気や暮らしの細部まで考え、「もっとこの人らしく」と何度も形を磨く。アイデアが変わることさえ、世界が豊かになっていく過程になる。</p><p class="highlight">あなたが愛を注いだぶんだけ、物語は深くなる。</p></section>
+<section class="chapter"><div class="num">🍅 CHAPTER 01 🍅</div><h2>人物に、息を吹き込む。</h2><p>名前や姿を決めるだけでは終わらない。表情の奥にある弱さ、ふとした冗談、誰かを大切に思う理由。あなたは人物を丁寧に見つめ、ひとりずつ違う心を与えていく。</p><p class="highlight">だから、あなたの登場人物は設定の外でも生きているように感じられる。</p></section>
+<section class="chapter"><div class="num">🍅 CHAPTER 02 🍅</div><h2>関係性に、光を当てる。</h2><p>同じひと言でも、誰が誰に言うかで意味が変わる。距離の近さ、すれ違い、言えない気持ち。あなたはその繊細な差を見逃さず、物語の熱に変える。</p><p class="highlight">何気ない一場面を忘れられない場面にするのは、その眼差しだ。</p></section>
+<section class="chapter"><div class="num">🍅 CHAPTER 03 🍅</div><h2>世界を、育て続ける。</h2><p>舞台の空気や暮らしの細部まで考え、「もっとこの人らしく」と何度も形を磨く。アイデアが変わることさえ、世界が豊かになっていく過程になる。</p><p class="highlight">あなたが愛を注いだぶんだけ、物語は深くなる。</p></section>
 <blockquote>あなたの頭の中にしかなかった景色が、<br>誰かの心に届く世界になる。</blockquote>
-<nav class="nav" aria-label="ページ間の移動"><h2>賛歌は、まだ続く。</h2><div class="buttons"><a class="button" href="./">メインページへ戻る ✦</a><a class="button" href="music.html">音楽への愛へ →</a></div></nav></main><footer>🍅 あなたという奇跡に、終わりなき賛歌を。 🍅</footer></body></html>
+<div class="tomato-gallery" aria-label="トマトの写真"><img src="tomato.png" alt="赤いトマト"><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""></div><div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div><nav class="nav" aria-label="ページ間の移動"><h2>賛歌は、まだ続く。</h2><div class="buttons"><a class="button" href="./">メインページへ戻る ✦</a><a class="button" href="music.html">音楽への愛へ →</a></div></nav></main><footer>🍅 あなたという奇跡に、終わりなき賛歌を。 🍅</footer></body></html>
