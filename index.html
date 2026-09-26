@@ -55,30 +55,55 @@
     @keyframes float { 50% { transform:translateY(-16px) rotate(5deg); } }
     @media(max-width:760px) { .cards,.page-links { grid-template-columns:1fr; }.card { min-height:auto; } section { padding:80px 22px; } .halo { width:85vw; } }
     @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
-  </style>
+  
+    /* Tomato garden theme */
+    :root { color-scheme: light; --bg:#fff7e9; --ink:#43221b; --muted:#76574c; --gold:#b72721; --pink:#39734b; }
+    body { background:#fff7e9; color:var(--ink); }
+    body::before { background:radial-gradient(circle at 50% 8%,#ffd1b1 0,transparent 34%),radial-gradient(circle at 90% 76%,#e2efd3 0,transparent 34%); }
+    .stars { opacity:.4; background-image:radial-gradient(#d9583b 1px,transparent 1px); }
+    header b,header strong,.eyebrow,.section-label,.kicker { color:#27613e; }
+    header a { color:#43221b; border-color:#b7272170; }
+    .button { color:#fff9eb; background:#b72721; border-color:#b72721; font-weight:700; }
+    .button:hover,.button:focus-visible { background:#27613e; border-color:#27613e; color:white; }
+    footer { color:#76574c; border-color:#b7272140; }
+    ::selection { background:#f5b498; color:#43221b; }
+
+    .halo { border:12px solid #bb2f25; background:radial-gradient(circle at 35% 30%,#fb7251,#d82d25 65%,#a81f1e); box-shadow:inset -22px -24px 45px #76170d55,0 22px 80px #ba3b3440; opacity:.23; }
+    .halo::before { content:"✱"; font-size:6rem; color:#2a733c; top:-18%; left:42%; }
+    .halo::after { content:""; }
+    h1 { text-shadow:0 8px 32px #b8372830; } h1 em { color:#ad241d; }
+    .card,.page-link { border-color:#b7272147; background:#fffdf5d9; box-shadow:0 12px 35px #8f472018; }
+    .card .number,.page-link small { color:#39734b; opacity:1; }
+    .card p,.page-link span { color:#76574c; }
+    .divider { background:linear-gradient(90deg,transparent,#c43d34,transparent); }
+    .quote { background:linear-gradient(100deg,#b92a25,#d84735,#b92a25); color:#fff9e9; }
+    .quotespark,.finale h2 { color:#27613e; }
+    .page-link:hover,.page-link:focus-visible { border-color:#27613e; background:#f2f7e8; }
+    #praise { color:#27613e; }
+    </style>
 </head>
 <body>
   <div class="stars" aria-hidden="true"></div>
-  <header><b>✦ A TRIBUTE ✦</b><a href="#reasons">その偉大さを読む ↓</a></header>
+  <header><b>🍅 A TRIBUTE 🍅</b><a href="#reasons">その偉大さを読む ↓</a></header>
   <main>
     <section class="hero" aria-labelledby="title">
       <div class="halo" aria-hidden="true"></div>
       <div>
-        <div class="eyebrow">この世界に、ひとつの祝福。</div>
+        <div class="eyebrow">太陽を浴びて、実る才能。</div>
         <h1 id="title">あなたは、<br><em>奇跡だ。</em></h1>
         <p class="lead">想像する。夢中になる。好きなものを、どこまでも好きでいる。<br>その一つひとつが、世界を少し面白くしている。</p>
         <a class="button" href="#manifesto">賛歌を読む　↓</a>
       </div>
     </section>
     <section id="manifesto" class="manifesto">
-      <div class="section-label">PROLOGUE / 宣言</div>
+      <div class="section-label">PROLOGUE / 実りの宣言</div>
       <h2>ここに、あなたへの賛歌を。</h2>
       <p>あなたの頭の中には、まだ誰も歩いたことのない世界がある。登場人物はそこで息をし、音楽はそこで鳴り、何気ない一場面さえ物語になる。思いついたことを「好き」の熱量で育てていく、その才能を讃えずにいられるだろうか。</p>
       <p>あなたが心を動かして語るとき、ありふれた一日が特別になる。細部まで見つめる眼差しも、もっと良くしたいと考え続ける姿勢も、あなたにしかない輝きだ。</p>
     </section>
     <div class="divider" aria-hidden="true"></div>
     <section id="reasons"><div class="wrap">
-      <div class="section-label">THE REASONS / 崇めるべき理由</div>
+      <div class="section-label">THE REASONS / 実り続ける理由</div>
       <h2>偉大さは、ひとつでは語れない。</h2>
       <div class="cards">
         <article class="card"><div class="number">01 ✦</div><h3>世界を生み出す人</h3><p>名前、表情、言葉遣い、関係性。ひとりの人物に幾層もの命を吹き込み、まだ存在しない景色を見せてくれる。あなたの想像力は、世界を増やす力だ。</p></article>
@@ -87,7 +112,7 @@
       </div>
     </div></section>
     <section id="chapters"><div class="wrap">
-      <div class="section-label">MORE TO CELEBRATE / ふたつの賛歌</div>
+      <div class="section-label">MORE TO CELEBRATE / ふたつの果実</div>
       <h2>あなたの「好き」を、もっと讃えよう。</h2>
       <div class="page-links">
         <a class="page-link" href="creation.html"><small>01 / CREATION</small><strong>創作への愛　→</strong><span>人物と世界を生み出す、あなたの想像力へ。</span></a>
@@ -97,7 +122,7 @@
     <section class="quote"><div class="quotespark" aria-hidden="true">✧</div><blockquote>あなたが「好き」を語るたび、<br>この宇宙には新しい星が生まれる。</blockquote></section>
     <section class="finale"><div><div class="section-label">AN EVERLASTING OVATION</div><h2>拍手は、まだ終わらない。</h2><p>あなたの発想も、情熱も、こだわりも。全部ひっくるめて、あなたは素晴らしい。これは、その事実を何度でも讃えるための場所。</p><button class="button" id="more" type="button">さらに讃えられる ✦</button><p id="praise" aria-live="polite"></p></div></section>
   </main>
-  <footer>✦ あなたという奇跡に、終わりなき賛歌を。 ✦</footer>
+  <footer>🍅 あなたという奇跡に、終わりなき賛歌を。 🍅</footer>
   <script>
     const praises = [
       "あなたの想像力には、王冠がよく似合う。",
