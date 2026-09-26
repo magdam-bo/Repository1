@@ -40,6 +40,10 @@
     .card { border:1px solid #eccca43d; padding:35px 29px 42px; border-radius:18px; background:linear-gradient(145deg,#ffffff0b,#ffffff03); min-height:340px; }
     .card .number { font-family:Georgia,serif; font-size:2.6rem; color:var(--gold); opacity:.7; }
     .card h3 { font-size:1.4rem; margin:22px 0 15px; }.card p { color:var(--muted); margin:0; }
+    .page-links { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:36px; }
+    .page-link { display:block; border:1px solid #eccca45c; border-radius:18px; padding:35px; color:var(--ink); text-decoration:none; background:linear-gradient(135deg,#ffffff12,#ffffff03); transition:.25s; }
+    .page-link:hover,.page-link:focus-visible { transform:translateY(-5px); border-color:var(--gold); background:#ffffff19; }
+    .page-link small { color:var(--gold); letter-spacing:.2em; }.page-link strong { display:block; font-family:"Noto Serif JP",serif; font-size:1.6rem; margin:12px 0; }.page-link span { color:var(--muted); }
     .quote { text-align:center; background:linear-gradient(90deg,#331e3e,#573047,#331e3e); }
     blockquote { max-width:850px; margin:0 auto; font-size:clamp(1.45rem,3vw,2.5rem); line-height:2; }
     .quotespark { color:var(--gold); font-size:3.5rem; line-height:1; }
@@ -49,7 +53,7 @@
     #praise { min-height:3em; color:var(--pink); font-family:"Noto Serif JP",serif; font-size:1.25rem; margin-top:28px; }
     footer { text-align:center; border-top:1px solid #ffffff22; padding:30px; font-size:.76rem; letter-spacing:.15em; color:var(--muted); }
     @keyframes float { 50% { transform:translateY(-16px) rotate(5deg); } }
-    @media(max-width:760px) { .cards { grid-template-columns:1fr; }.card { min-height:auto; } section { padding:80px 22px; } .halo { width:85vw; } }
+    @media(max-width:760px) { .cards,.page-links { grid-template-columns:1fr; }.card { min-height:auto; } section { padding:80px 22px; } .halo { width:85vw; } }
     @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
   </style>
 </head>
@@ -80,6 +84,14 @@
         <article class="card"><div class="number">01 ✦</div><h3>世界を生み出す人</h3><p>名前、表情、言葉遣い、関係性。ひとりの人物に幾層もの命を吹き込み、まだ存在しない景色を見せてくれる。あなたの想像力は、世界を増やす力だ。</p></article>
         <article class="card"><div class="number">02 ✦</div><h3>「好き」に誠実な人</h3><p>心を掴まれたものを、細部まで見つめて大切にする。その熱量があるから、あなたの語る音楽も物語も、聞く人の目の前で鮮やかに立ち上がる。</p></article>
         <article class="card"><div class="number">03 ✦</div><h3>磨き続ける人</h3><p>言葉を選び直し、設定を深め、音を探す。「これだ」と思える形に近づくまで考え続ける。そのこだわりこそ、あなたの創作を唯一無二にしている。</p></article>
+      </div>
+    </div></section>
+    <section id="chapters"><div class="wrap">
+      <div class="section-label">MORE TO CELEBRATE / ふたつの賛歌</div>
+      <h2>あなたの「好き」を、もっと讃えよう。</h2>
+      <div class="page-links">
+        <a class="page-link" href="creation.html"><small>01 / CREATION</small><strong>創作への愛　→</strong><span>人物と世界を生み出す、あなたの想像力へ。</span></a>
+        <a class="page-link" href="music.html"><small>02 / MUSIC</small><strong>音楽への愛　→</strong><span>音を聴き、弾き、つくろうとする情熱へ。</span></a>
       </div>
     </div></section>
     <section class="quote"><div class="quotespark" aria-hidden="true">✧</div><blockquote>あなたが「好き」を語るたび、<br>この宇宙には新しい星が生まれる。</blockquote></section>
