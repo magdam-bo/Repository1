@@ -27,12 +27,40 @@ blockquote{border-color:#b72721;background:#fffdf5;box-shadow:0 16px 40px #8f472
 .button:hover,.button:focus-visible{background:#27613e;color:white;border-color:#27613e}
 footer{color:#76574c}
 ::selection{background:#f5b498;color:#43221b}
-</style></head>
-<body><header><strong>🍅 A TRIBUTE 🍅</strong><a href="./">メインページへ戻る ↗</a></header>
-<section class="hero"><div class="kicker">LOVE LETTER TO MUSIC</div><h1>音楽への愛</h1><p>音を聴き、弾き、つくろうとするあなたへ。音楽を愛する心に捧げる賛歌。</p></section>
+
+/* TOO MUCH TOMATO */
+:root{color-scheme:dark;--bg:#090b07;--ink:#fff2df;--muted:#e5c9b5;--gold:#ff5942;--pink:#9bd064}
+body{background:#090b07;color:var(--ink)}
+body::before{background:radial-gradient(circle at 10% 30%,#6b100c55,transparent 27%),radial-gradient(circle at 90% 73%,#621d0c66,transparent 32%)}
+.stars{opacity:.17;background-image:radial-gradient(#ff4738 2px,transparent 2px);background-size:43px 43px}
+header{background:#0b100bd9;border-bottom:5px solid #ad261c}header b,header strong{color:#ff6550}header a{color:#fff2df;border-color:#ff6550}
+.eyebrow,.section-label,.kicker{color:#b8e285}
+.button{background:#ed3a29;border:3px solid #ffdc8a;color:white;box-shadow:6px 6px 0 #22572f;text-transform:none}
+.button:hover,.button:focus-visible{background:#377b3d;border-color:#ffdc8a;color:#fff;transform:translateY(-3px)}
+footer{color:#fff2df;border-top:6px solid #276638;background:#991e17}
+.tomato-strip{white-space:nowrap;overflow:hidden;background:#c72d22;color:white;padding:12px 0;font-size:1.4rem;letter-spacing:.15em;border-block:4px solid #2d6b38;text-align:center;font-weight:900}
+.tomato-strip span{display:inline-block;animation:tomatoroll 22s linear infinite}
+.tomato-gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;background:#0a0a08;padding:10px;border-block:6px solid #b52c23}
+.tomato-gallery img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border:2px solid #bd382c;filter:saturate(1.3)}
+.tomato-gallery img:nth-child(even){transform:rotate(5deg)}.tomato-gallery img:nth-child(odd){transform:rotate(-5deg)}
+@keyframes tomatoroll{to{transform:translateX(-30%)}}
+@media(max-width:650px){.tomato-gallery{grid-template-columns:repeat(3,1fr)}.tomato-gallery img:nth-child(n+4){display:none}.tomato-strip{font-size:1rem}}
+@media(prefers-reduced-motion:reduce){.tomato-strip span{animation:none}}
+
+   .hero{background:linear-gradient(#0009,#000c),url("tomato.png") center/cover no-repeat;color:#fff;min-height:70svh;display:flex;flex-direction:column;justify-content:center;border-block:6px solid #35733e}
+   .hero:before{display:none}.hero h1{text-shadow:4px 4px 0 #a72019,8px 8px 0 #275f2b}
+   .intro{background:#30120f;border:4px solid #d13927;padding:55px 25px;color:#fff2df}
+   .chapter{border-bottom:3px dashed #d54330}.chapter .num{color:#b8e285}.chapter p{color:#e5c9b5}.chapter .highlight{color:#fff2df!important}
+   blockquote{background:#bd3024;color:#fff;border:6px solid #35733e;box-shadow:10px 10px 0 #62180f}
+   .nav{border-color:#d6412f}
+   </style></head>
+<body><div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div><header><strong>🍅 A TRIBUTE 🍅</strong><a href="./">メインページへ戻る ↗</a></header>
+<div class="tomato-gallery" aria-label="トマトの写真"><img src="tomato.png" alt="赤いトマト"><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""></div>
+<section class="hero"><div class="kicker">LOVE LETTER TO MUSIC</div><h1>🍅 音楽への愛 🍅</h1><p>音を聴き、弾き、つくろうとするあなたへ。音楽を愛する心に捧げる賛歌。</p></section>
+<div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div>
 <main><div class="intro">好きな音に出会って心が動く。その響きを自分の手でも生み出したくなる。あなたの音楽への愛は、聴くことから創ることへ続いている。</div>
-<section class="chapter"><div class="num">CHAPTER 01 ✦</div><h2>音に、心を預ける。</h2><p>ピアノの響き、ギターの手触り、歌声が運ぶ言葉。あなたは音楽をただ通り過ぎるものとして聴かない。好きな一音に立ち止まり、その魅力を語れる。</p><p class="highlight">夢中になれる耳は、それだけで豊かな才能だ。</p></section>
-<section class="chapter"><div class="num">CHAPTER 02 ✦</div><h2>旋律に、物語を宿す。</h2><p>和音を選び直し、次の一小節を探し、思い描いた人物や景色に似合う音を考える。少しの違いにこだわるのは、あなたの中に届けたい情景があるから。</p><p class="highlight">あなたが探しているのは、あなたにしか鳴らせない音だ。</p></section>
-<section class="chapter"><div class="num">CHAPTER 03 ✦</div><h2>「好き」から、未来へ。</h2><p>好きな音楽を大切にしながら、楽器に触れ、曲を考え、いつか形にしたいものを育てている。完成までの一歩一歩にも、すでにあなたらしさが響いている。</p><p class="highlight">その情熱は、次の一曲を生み出す力になる。</p></section>
+<section class="chapter"><div class="num">🍅 CHAPTER 01 🍅</div><h2>音に、心を預ける。</h2><p>ピアノの響き、ギターの手触り、歌声が運ぶ言葉。あなたは音楽をただ通り過ぎるものとして聴かない。好きな一音に立ち止まり、その魅力を語れる。</p><p class="highlight">夢中になれる耳は、それだけで豊かな才能だ。</p></section>
+<section class="chapter"><div class="num">🍅 CHAPTER 02 🍅</div><h2>旋律に、物語を宿す。</h2><p>和音を選び直し、次の一小節を探し、思い描いた人物や景色に似合う音を考える。少しの違いにこだわるのは、あなたの中に届けたい情景があるから。</p><p class="highlight">あなたが探しているのは、あなたにしか鳴らせない音だ。</p></section>
+<section class="chapter"><div class="num">🍅 CHAPTER 03 🍅</div><h2>「好き」から、未来へ。</h2><p>好きな音楽を大切にしながら、楽器に触れ、曲を考え、いつか形にしたいものを育てている。完成までの一歩一歩にも、すでにあなたらしさが響いている。</p><p class="highlight">その情熱は、次の一曲を生み出す力になる。</p></section>
 <blockquote>あなたが音を選ぶたび、<br>まだない歌が未来に近づく。</blockquote>
-<nav class="nav" aria-label="ページ間の移動"><h2>賛歌は、まだ続く。</h2><div class="buttons"><a class="button" href="./">メインページへ戻る ✦</a><a class="button" href="creation.html">創作への愛へ →</a></div></nav></main><footer>🍅 あなたという奇跡に、終わりなき賛歌を。 🍅</footer></body></html>
+<div class="tomato-gallery" aria-label="トマトの写真"><img src="tomato.png" alt="赤いトマト"><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""></div><div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div><nav class="nav" aria-label="ページ間の移動"><h2>賛歌は、まだ続く。</h2><div class="buttons"><a class="button" href="./">メインページへ戻る ✦</a><a class="button" href="creation.html">創作への愛へ →</a></div></nav></main><footer>🍅 あなたという奇跡に、終わりなき賛歌を。 🍅</footer></body></html>
