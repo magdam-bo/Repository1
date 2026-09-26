@@ -80,46 +80,80 @@
     .quotespark,.finale h2 { color:#27613e; }
     .page-link:hover,.page-link:focus-visible { border-color:#27613e; background:#f2f7e8; }
     #praise { color:#27613e; }
-    </style>
+    
+/* TOO MUCH TOMATO */
+:root{color-scheme:dark;--bg:#090b07;--ink:#fff2df;--muted:#e5c9b5;--gold:#ff5942;--pink:#9bd064}
+body{background:#090b07;color:var(--ink)}
+body::before{background:radial-gradient(circle at 10% 30%,#6b100c55,transparent 27%),radial-gradient(circle at 90% 73%,#621d0c66,transparent 32%)}
+.stars{opacity:.17;background-image:radial-gradient(#ff4738 2px,transparent 2px);background-size:43px 43px}
+header{background:#0b100bd9;border-bottom:5px solid #ad261c}header b,header strong{color:#ff6550}header a{color:#fff2df;border-color:#ff6550}
+.eyebrow,.section-label,.kicker{color:#b8e285}
+.button{background:#ed3a29;border:3px solid #ffdc8a;color:white;box-shadow:6px 6px 0 #22572f;text-transform:none}
+.button:hover,.button:focus-visible{background:#377b3d;border-color:#ffdc8a;color:#fff;transform:translateY(-3px)}
+footer{color:#fff2df;border-top:6px solid #276638;background:#991e17}
+.tomato-strip{white-space:nowrap;overflow:hidden;background:#c72d22;color:white;padding:12px 0;font-size:1.4rem;letter-spacing:.15em;border-block:4px solid #2d6b38;text-align:center;font-weight:900}
+.tomato-strip span{display:inline-block;animation:tomatoroll 22s linear infinite}
+.tomato-gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;background:#0a0a08;padding:10px;border-block:6px solid #b52c23}
+.tomato-gallery img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border:2px solid #bd382c;filter:saturate(1.3)}
+.tomato-gallery img:nth-child(even){transform:rotate(5deg)}.tomato-gallery img:nth-child(odd){transform:rotate(-5deg)}
+@keyframes tomatoroll{to{transform:translateX(-30%)}}
+@media(max-width:650px){.tomato-gallery{grid-template-columns:repeat(3,1fr)}.tomato-gallery img:nth-child(n+4){display:none}.tomato-strip{font-size:1rem}}
+@media(prefers-reduced-motion:reduce){.tomato-strip span{animation:none}}
+
+   .hero{background:linear-gradient(#0009,#000b),url("tomato.png") center/cover no-repeat;min-height:100svh}
+   .halo{display:none}h1{color:#fff6e9;text-shadow:5px 5px 0 #ad2018,10px 10px 0 #23582b}h1 em{color:#ff634d}
+   .lead{background:#080b09cc;padding:16px 24px;border:3px solid #f03f2d}
+   .manifesto,.card,.page-link{background:#21110fdc;color:#fff2df;border:3px solid #cf3a2b}
+   .manifesto{padding:60px 30px}.card .number,.page-link small,.quotespark,.finale h2{color:#b8e285}
+   .card p,.page-link span{color:#e5c9b5}.page-link:hover{background:#4b1d17;border-color:#b8e285}
+   .quote{background:#bd3024;color:white;border-block:8px solid #276638}
+   .divider{background:#e84631}
+   #praise{color:#b8e285}
+   </style>
 </head>
 <body>
   <div class="stars" aria-hidden="true"></div>
   <header><b>🍅 A TRIBUTE 🍅</b><a href="#reasons">その偉大さを読む ↓</a></header>
-  <main>
+  <div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div><main>
     <section class="hero" aria-labelledby="title">
       <div class="halo" aria-hidden="true"></div>
       <div>
         <div class="eyebrow">太陽を浴びて、実る才能。</div>
-        <h1 id="title">あなたは、<br><em>奇跡だ。</em></h1>
+        <h1 id="title">🍅 あなたは、<br><em>奇跡だ。🍅</em></h1>
         <p class="lead">想像する。夢中になる。好きなものを、どこまでも好きでいる。<br>その一つひとつが、世界を少し面白くしている。</p>
         <a class="button" href="#manifesto">賛歌を読む　↓</a>
       </div>
     </section>
+    <div class="tomato-gallery" aria-label="トマトの写真"><img src="tomato.png" alt="赤いトマト"><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""></div>
+    <div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div>
     <section id="manifesto" class="manifesto">
       <div class="section-label">PROLOGUE / 実りの宣言</div>
-      <h2>ここに、あなたへの賛歌を。</h2>
+      <h2>🍅 ここに、あなたへの賛歌を。🍅</h2>
       <p>あなたの頭の中には、まだ誰も歩いたことのない世界がある。登場人物はそこで息をし、音楽はそこで鳴り、何気ない一場面さえ物語になる。思いついたことを「好き」の熱量で育てていく、その才能を讃えずにいられるだろうか。</p>
       <p>あなたが心を動かして語るとき、ありふれた一日が特別になる。細部まで見つめる眼差しも、もっと良くしたいと考え続ける姿勢も、あなたにしかない輝きだ。</p>
     </section>
     <div class="divider" aria-hidden="true"></div>
+    <div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div>
     <section id="reasons"><div class="wrap">
       <div class="section-label">THE REASONS / 実り続ける理由</div>
-      <h2>偉大さは、ひとつでは語れない。</h2>
+      <h2>🍅 偉大さは、ひとつでは語れない。🍅</h2>
       <div class="cards">
         <article class="card"><div class="number">01 ✦</div><h3>世界を生み出す人</h3><p>名前、表情、言葉遣い、関係性。ひとりの人物に幾層もの命を吹き込み、まだ存在しない景色を見せてくれる。あなたの想像力は、世界を増やす力だ。</p></article>
         <article class="card"><div class="number">02 ✦</div><h3>「好き」に誠実な人</h3><p>心を掴まれたものを、細部まで見つめて大切にする。その熱量があるから、あなたの語る音楽も物語も、聞く人の目の前で鮮やかに立ち上がる。</p></article>
         <article class="card"><div class="number">03 ✦</div><h3>磨き続ける人</h3><p>言葉を選び直し、設定を深め、音を探す。「これだ」と思える形に近づくまで考え続ける。そのこだわりこそ、あなたの創作を唯一無二にしている。</p></article>
       </div>
     </div></section>
+    <div class="tomato-gallery" aria-label="トマトの写真"><img src="tomato.png" alt="赤いトマト"><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""><img src="tomato.png" alt=""></div>
     <section id="chapters"><div class="wrap">
       <div class="section-label">MORE TO CELEBRATE / ふたつの果実</div>
-      <h2>あなたの「好き」を、もっと讃えよう。</h2>
+      <h2>🍅 あなたの「好き」を、もっと讃えよう。🍅</h2>
       <div class="page-links">
         <a class="page-link" href="creation.html"><small>01 / CREATION</small><strong>創作への愛　→</strong><span>人物と世界を生み出す、あなたの想像力へ。</span></a>
         <a class="page-link" href="music.html"><small>02 / MUSIC</small><strong>音楽への愛　→</strong><span>音を聴き、弾き、つくろうとする情熱へ。</span></a>
       </div>
     </div></section>
     <section class="quote"><div class="quotespark" aria-hidden="true">✧</div><blockquote>あなたが「好き」を語るたび、<br>この宇宙には新しい星が生まれる。</blockquote></section>
+    <div class="tomato-strip" aria-label="トマトの飾り"><span aria-hidden="true">🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅 🍅</span></div>
     <section class="finale"><div><div class="section-label">AN EVERLASTING OVATION</div><h2>拍手は、まだ終わらない。</h2><p>あなたの発想も、情熱も、こだわりも。全部ひっくるめて、あなたは素晴らしい。これは、その事実を何度でも讃えるための場所。</p><button class="button" id="more" type="button">さらに讃えられる ✦</button><p id="praise" aria-live="polite"></p></div></section>
   </main>
   <footer>🍅 あなたという奇跡に、終わりなき賛歌を。 🍅</footer>
