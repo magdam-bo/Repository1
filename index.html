@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151020">
+  <meta name="description" content="創造と情熱に満ちた、あなたを讃える小さな神殿。">
+  <title>あなたという奇跡 | 賛歌</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;600;700;900&display=swap');
+    :root { color-scheme: dark; --bg:#151020; --ink:#f8f1e8; --muted:#c7b8cd; --gold:#f4d99a; --pink:#e9a9ce; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:"Noto Sans JP",sans-serif; line-height:1.9; overflow-x:hidden; }
+    body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:-1; background:radial-gradient(circle at 50% 15%,#57365390,transparent 35%),radial-gradient(circle at 90% 80%,#40325680,transparent 45%); }
+    .stars { position:fixed; inset:0; pointer-events:none; z-index:-1; opacity:.4; background-image:radial-gradient(#ffe7bc 1px,transparent 1px); background-size:71px 83px; }
+    header { position:absolute; z-index:2; top:0; left:0; width:100%; padding:23px clamp(22px,5vw,80px); display:flex; justify-content:space-between; align-items:center; letter-spacing:.18em; font-size:.72rem; }
+    header b { font-family:Georgia,serif; color:var(--gold); font-size:1rem; }
+    header a { color:var(--ink); text-decoration:none; border-bottom:1px solid #ffffff60; }
+    .hero { min-height:100svh; display:grid; place-items:center; text-align:center; padding:110px 22px 90px; position:relative; isolation:isolate; }
+    .halo { position:absolute; width:min(68vw,590px); aspect-ratio:1; border:1px solid #e6cb9160; border-radius:50%; z-index:-1; box-shadow:0 0 0 28px #e6cb9108,0 0 0 65px #e6cb9108,0 0 130px #f4c88030,inset 0 0 85px #f4c88013; animation:float 8s ease-in-out infinite; }
+    .halo::before,.halo::after { content:"✦"; position:absolute; color:var(--gold); font-size:2rem; }
+    .halo::before { top:10%; left:11%; }.halo::after { right:8%; bottom:13%; }
+    .eyebrow { color:var(--gold); letter-spacing:.35em; font-size:.78rem; font-weight:700; }
+    h1,h2,h3,blockquote { font-family:"Noto Serif JP",serif; }
+    h1 { font-size:clamp(3.4rem,11vw,9rem); line-height:1.25; letter-spacing:.08em; margin:.25em 0; text-shadow:0 7px 40px #e5a6c680; }
+    h1 em { font-style:normal; color:var(--gold); }
+    .lead { max-width:650px; margin:25px auto 35px; font-size:clamp(.95rem,2vw,1.2rem); }
+    .button { display:inline-block; border:1px solid var(--gold); padding:11px 27px; color:var(--gold); text-decoration:none; border-radius:999px; font-size:.86rem; letter-spacing:.13em; transition:.25s; background:#15102080; cursor:pointer; font-family:inherit; }
+    .button:hover,.button:focus-visible { background:var(--gold); color:#261729; transform:translateY(-3px); }
+    main { position:relative; }
+    section { padding:110px 24px; }
+    .wrap { max-width:1060px; margin:auto; }
+    .section-label { color:var(--pink); font-size:.75rem; letter-spacing:.3em; font-weight:700; }
+    h2 { font-size:clamp(2rem,5vw,3.6rem); line-height:1.55; margin:12px 0 34px; }
+    .manifesto { text-align:center; max-width:850px; margin:auto; }
+    .manifesto p { font-family:"Noto Serif JP",serif; font-size:clamp(1.08rem,2.5vw,1.55rem); line-height:2.25; }
+    .divider { height:1px; max-width:850px; margin:auto; background:linear-gradient(90deg,transparent,#ddc09290,transparent); }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { border:1px solid #eccca43d; padding:35px 29px 42px; border-radius:18px; background:linear-gradient(145deg,#ffffff0b,#ffffff03); min-height:340px; }
+    .card .number { font-family:Georgia,serif; font-size:2.6rem; color:var(--gold); opacity:.7; }
+    .card h3 { font-size:1.4rem; margin:22px 0 15px; }.card p { color:var(--muted); margin:0; }
+    .quote { text-align:center; background:linear-gradient(90deg,#331e3e,#573047,#331e3e); }
+    blockquote { max-width:850px; margin:0 auto; font-size:clamp(1.45rem,3vw,2.5rem); line-height:2; }
+    .quotespark { color:var(--gold); font-size:3.5rem; line-height:1; }
+    .finale { text-align:center; min-height:480px; display:grid; place-items:center; }
+    .finale h2 { color:var(--gold); }
+    .finale p { max-width:650px; margin:0 auto 30px; }
+    #praise { min-height:3em; color:var(--pink); font-family:"Noto Serif JP",serif; font-size:1.25rem; margin-top:28px; }
+    footer { text-align:center; border-top:1px solid #ffffff22; padding:30px; font-size:.76rem; letter-spacing:.15em; color:var(--muted); }
+    @keyframes float { 50% { transform:translateY(-16px) rotate(5deg); } }
+    @media(max-width:760px) { .cards { grid-template-columns:1fr; }.card { min-height:auto; } section { padding:80px 22px; } .halo { width:85vw; } }
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }
+  </style>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header><b>✦ A TRIBUTE ✦</b><a href="#reasons">その偉大さを読む ↓</a></header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="halo" aria-hidden="true"></div>
+      <div>
+        <div class="eyebrow">この世界に、ひとつの祝福。</div>
+        <h1 id="title">あなたは、<br><em>奇跡だ。</em></h1>
+        <p class="lead">想像する。夢中になる。好きなものを、どこまでも好きでいる。<br>その一つひとつが、世界を少し面白くしている。</p>
+        <a class="button" href="#manifesto">賛歌を読む　↓</a>
+      </div>
+    </section>
+    <section id="manifesto" class="manifesto">
+      <div class="section-label">PROLOGUE / 宣言</div>
+      <h2>ここに、あなたへの賛歌を。</h2>
+      <p>あなたの頭の中には、まだ誰も歩いたことのない世界がある。登場人物はそこで息をし、音楽はそこで鳴り、何気ない一場面さえ物語になる。思いついたことを「好き」の熱量で育てていく、その才能を讃えずにいられるだろうか。</p>
+      <p>あなたが心を動かして語るとき、ありふれた一日が特別になる。細部まで見つめる眼差しも、もっと良くしたいと考え続ける姿勢も、あなたにしかない輝きだ。</p>
+    </section>
+    <div class="divider" aria-hidden="true"></div>
+    <section id="reasons"><div class="wrap">
+      <div class="section-label">THE REASONS / 崇めるべき理由</div>
+      <h2>偉大さは、ひとつでは語れない。</h2>
+      <div class="cards">
+        <article class="card"><div class="number">01 ✦</div><h3>世界を生み出す人</h3><p>名前、表情、言葉遣い、関係性。ひとりの人物に幾層もの命を吹き込み、まだ存在しない景色を見せてくれる。あなたの想像力は、世界を増やす力だ。</p></article>
+        <article class="card"><div class="number">02 ✦</div><h3>「好き」に誠実な人</h3><p>心を掴まれたものを、細部まで見つめて大切にする。その熱量があるから、あなたの語る音楽も物語も、聞く人の目の前で鮮やかに立ち上がる。</p></article>
+        <article class="card"><div class="number">03 ✦</div><h3>磨き続ける人</h3><p>言葉を選び直し、設定を深め、音を探す。「これだ」と思える形に近づくまで考え続ける。そのこだわりこそ、あなたの創作を唯一無二にしている。</p></article>
+      </div>
+    </div></section>
+    <section class="quote"><div class="quotespark" aria-hidden="true">✧</div><blockquote>あなたが「好き」を語るたび、<br>この宇宙には新しい星が生まれる。</blockquote></section>
+    <section class="finale"><div><div class="section-label">AN EVERLASTING OVATION</div><h2>拍手は、まだ終わらない。</h2><p>あなたの発想も、情熱も、こだわりも。全部ひっくるめて、あなたは素晴らしい。これは、その事実を何度でも讃えるための場所。</p><button class="button" id="more" type="button">さらに讃えられる ✦</button><p id="praise" aria-live="polite"></p></div></section>
+  </main>
+  <footer>✦ あなたという奇跡に、終わりなき賛歌を。 ✦</footer>
+  <script>
+    const praises = [
+      "あなたの想像力には、王冠がよく似合う。",
+      "その「好き」の熱量は、星よりまぶしい。",
+      "あなたが描く世界は、あなたにしか生み出せない。",
+      "細部を愛するその目こそ、創造の宝物。",
+      "今日もあなたの存在に、盛大な拍手を。"
+    ];
+    let praiseIndex = 0;
+    document.getElementById("more").addEventListener("click", () => {
+      document.getElementById("praise").textContent = praises[praiseIndex++ % praises.length];
+    });
+  </script>
+</body>
+</html>
